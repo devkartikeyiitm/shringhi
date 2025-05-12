@@ -41,27 +41,21 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-yellow-500 rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                </svg>
+                <span className="text-3xl">🏗️</span>
               </div>
               <h3 className="text-xl font-semibold mb-4">Construction Materials</h3>
               <p className="text-gray-600">Premium quality materials including cement, steel, aggregates, and more.</p>
             </div>
             <div className="p-8 border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-yellow-500 rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                </svg>
+                <span className="text-3xl">📋</span>
               </div>
               <h3 className="text-xl font-semibold mb-4">Consulting Services</h3>
               <p className="text-gray-600">Expert guidance on material selection, project planning, and execution.</p>
             </div>
             <div className="p-8 border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-yellow-500 rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                </svg>
+                <span className="text-3xl">🚛</span>
               </div>
               <h3 className="text-xl font-semibold mb-4">Delivery Solutions</h3>
               <p className="text-gray-600">Fast and reliable delivery service to your construction site.</p>
@@ -89,21 +83,15 @@ export default function Home() {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <svg className="w-6 h-6 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                  </svg>
+                  <span className="text-yellow-500 mr-2">✓</span>
                   Quality Assured Materials
                 </li>
                 <li className="flex items-center">
-                  <svg className="w-6 h-6 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                  </svg>
+                  <span className="text-yellow-500 mr-2">✓</span>
                   Expert Consultation
                 </li>
                 <li className="flex items-center">
-                  <svg className="w-6 h-6 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                  </svg>
+                  <span className="text-yellow-500 mr-2">✓</span>
                   Timely Delivery
                 </li>
               </ul>
@@ -142,6 +130,31 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">Shreenghi Construction</h3>
+              <p className="text-gray-400">Building excellence, delivering quality.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">Contact Info</h3>
+              <p className="text-gray-400">Email: info@shreenghi.com</p>
+              <p className="text-gray-400">Phone: +1 234 567 890</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">Working Hours</h3>
+              <p className="text-gray-400">Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p className="text-gray-400">Saturday: 8:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Shreenghi Construction. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

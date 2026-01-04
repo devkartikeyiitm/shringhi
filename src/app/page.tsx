@@ -1,160 +1,69 @@
+'use client';
+
 import React from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 className="text-2xl font-bold">SHRINGHI</h1>
+          <ul className="flex gap-6">
+            <li><Link href="/" className="hover:text-orange-500 transition">Home</Link></li>
+            <li><Link href="/about" className="hover:text-orange-500 transition">About</Link></li>
+            <li><Link href="/services" className="hover:text-orange-500 transition">Services</Link></li>
+            <li><Link href="/products" className="hover:text-orange-500 transition">Products</Link></li>
+            <li><Link href="/contact" className="hover:text-orange-500 transition">Contact</Link></li>
+          </ul>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.pexels.com/photos/2590716/pexels-photo-2590716.jpeg"
-            alt="Construction site"
-            fill
-            className="object-cover brightness-50"
-            priority
-          />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl text-white">
-            <h1 className="text-5xl font-bold mb-6">Building Tomorrow's Infrastructure Today</h1>
-            <p className="text-xl mb-8">Your trusted partner in construction materials and services with over 20 years of excellence.</p>
-            <div className="flex gap-4">
-              <button className="bg-yellow-500 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
-                Get a Quote
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors">
-                Our Projects
-              </button>
-            </div>
-          </div>
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-5xl font-bold mb-4">Welcome to SHRINGHI</h2>
+          <p className="text-xl mb-8">Your Trusted Partner in Real Estate & Construction Materials</p>
+          <button className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-bold transition">Get Started</button>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 bg-white">
+      {/* Services Preview */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">We provide comprehensive construction solutions tailored to meet your specific needs.</p>
-          </div>
+          <h3 className="text-4xl font-bold text-center mb-12">Our Services</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-yellow-500 rounded-lg mb-6 flex items-center justify-center">
-                <span className="text-3xl">🏗️</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Construction Materials</h3>
-              <p className="text-gray-600">Premium quality materials including cement, steel, aggregates, and more.</p>
+            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+              <h4 className="text-2xl font-bold mb-4 text-blue-600">Real Estate</h4>
+              <p className="text-gray-600">Professional real estate services for residential and commercial properties.</p>
             </div>
-            <div className="p-8 border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-yellow-500 rounded-lg mb-6 flex items-center justify-center">
-                <span className="text-3xl">📋</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Consulting Services</h3>
-              <p className="text-gray-600">Expert guidance on material selection, project planning, and execution.</p>
+            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+              <h4 className="text-2xl font-bold mb-4 text-blue-600">Construction Materials</h4>
+              <p className="text-gray-600">High-quality construction materials and supplies for all projects.</p>
             </div>
-            <div className="p-8 border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-yellow-500 rounded-lg mb-6 flex items-center justify-center">
-                <span className="text-3xl">🚛</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Delivery Solutions</h3>
-              <p className="text-gray-600">Fast and reliable delivery service to your construction site.</p>
+            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+              <h4 className="text-2xl font-bold mb-4 text-blue-600">Consultation</h4>
+              <p className="text-gray-600">Expert consultation for your construction and real estate needs.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px]">
-              <Image
-                src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg"
-                alt="About us"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-6">About Shreenghi Construction</h2>
-              <p className="text-gray-600 mb-6">
-                With over two decades of experience in the construction industry, we've built our reputation on quality, reliability, and customer satisfaction. Our commitment to excellence has made us a trusted name in construction materials and services.
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-center">
-                  <span className="text-yellow-500 mr-2">✓</span>
-                  Quality Assured Materials
-                </li>
-                <li className="flex items-center">
-                  <span className="text-yellow-500 mr-2">✓</span>
-                  Expert Consultation
-                </li>
-                <li className="flex items-center">
-                  <span className="text-yellow-500 mr-2">✓</span>
-                  Timely Delivery
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Get in touch with us for quotes, consultations, or any questions about our services.</p>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                <input type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input type="email" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent" />
-              </div>
-              <div className="md:col-span-2">
-                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea rows={4} className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"></textarea>
-              </div>
-              <div className="md:col-span-2">
-                <button className="w-full bg-yellow-500 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
+      {/* CTA Section */}
+      <section className="bg-blue-600 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h3 className="text-3xl font-bold mb-8">Ready to Build Your Dream?</h3>
+          <Link href="/contact" className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-bold inline-block transition">Contact Us Today</Link>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Shreenghi Construction</h3>
-              <p className="text-gray-400">Building excellence, delivering quality.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Contact Info</h3>
-              <p className="text-gray-400">Email: info@shreenghi.com</p>
-              <p className="text-gray-400">Phone: +1 234 567 890</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Working Hours</h3>
-              <p className="text-gray-400">Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p className="text-gray-400">Saturday: 8:00 AM - 2:00 PM</p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Shreenghi Construction. All rights reserved.</p>
-          </div>
+      <footer className="bg-slate-900 text-white py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p>&copy; 2026 SHRINGHI - Real Estate & Construction Materials. All rights reserved.</p>
         </div>
       </footer>
-    </main>
+    </div>
   );
 }

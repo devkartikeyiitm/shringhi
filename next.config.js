@@ -13,3 +13,5 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+// Next.js configuration updated for image optimization

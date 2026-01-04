@@ -99,4 +99,7 @@ For more information, visit the project repository: [devkartikeyiitm/shringhi](h
 
 ---
 
+## Commit 1 - Documentation Update
+Added additional documentation for better understanding.
+
 **Last Updated**: January 2, 2026

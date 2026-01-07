@@ -99,6 +99,10 @@ For more information, visit the project repository: [devkartikeyiitm/shringhi](h
 
 ---
 
+## Additional Notes
+
+This project demonstrates modern web development practices with a focus on responsive design and TypeScript support. The Shringhi construction website project is actively maintained and welcomes community contributions.
+
 ## Commit 1 - Documentation Update
 Added additional documentation for better understanding.
 

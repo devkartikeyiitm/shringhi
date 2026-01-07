@@ -23,3 +23,15 @@ Thumbs.db
 # Build
 build/
 dist/
+
+# Logs and debugging
+logs/
+*.log
+
+# Testing
+.coverage/
+.nyc_output/
+
+# Editor backup files
+*.bak
+*.tmp

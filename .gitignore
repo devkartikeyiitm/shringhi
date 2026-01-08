@@ -35,3 +35,5 @@ logs/
 # Editor backup files
 *.bak
 *.tmp
+
+# Commit 4: Performance Optimization

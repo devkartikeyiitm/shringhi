@@ -10,3 +10,5 @@
 - Mobile app support
 - Analytics dashboard
 - API integration
+- Multi-language support
+- Dark mode support

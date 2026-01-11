@@ -19,3 +19,7 @@ The Shringhi application follows a modular Next.js architecture designed for sca
 - Input validation on all endpoints
 - JWT authentication
 - HTTPS only
+- Rate limiting
+
+## Last Updated
+January 11, 2026 - Architecture documentation reviewed and updated

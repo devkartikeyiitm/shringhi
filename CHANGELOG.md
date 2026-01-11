@@ -2,6 +2,13 @@
 
 All notable changes to the Shringhi project will be documented in this file.
 
+## [1.6.0] - 2026-01-11
+
+### Added
+- Daily commit contribution tracking
+- Updated project documentation
+
+
 ## [1.5.0] - 2024-01-10
 
 ### Added

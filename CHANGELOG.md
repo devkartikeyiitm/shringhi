@@ -2,6 +2,10 @@
 
 All notable changes to the Shringhi project will be documented in this file.
 
+## [1.8.0] - 2026-01-21
+
+### Added
+- Green box commit 1
 ## [1.7.0] - 2026-01-13
 
 ### Added

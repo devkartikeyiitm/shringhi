@@ -2,6 +2,7 @@
 
 ### Added
 - Daily streak commit 1
+- - Daily streak commit 2
 # Changelog
 
 All notable changes to the Shringhi project will be documented in this file.

@@ -1,3 +1,7 @@
+## [1.8.1] - 2026-01-23
+
+### Added
+- Daily streak commit 1
 # Changelog
 
 All notable changes to the Shringhi project will be documented in this file.
